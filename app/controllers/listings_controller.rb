@@ -5,7 +5,8 @@ class ListingsController < ApplicationController
         @listings = Listing.all
     end
 
-    def def new
+    def new
+        @listing = Listing.new
     end
 
     def create
